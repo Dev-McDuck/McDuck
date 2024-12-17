@@ -1,0 +1,233 @@
+html{
+    background-color: rgb(5, 1, 15);
+}
+
+
+body{
+    width: 60%;
+    font-family: "Source Code Pro", serif;
+    color: aliceblue;
+    font-weight: 0;
+    font-size: 18px;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+header {
+
+    margin-bottom: 30px;
+}
+
+.logo{
+
+    font-size: 80px;
+    font-family: "Source Code Pro";
+    font-weight: bold;
+
+    text-align: center;
+
+}
+
+
+
+.topButtons {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap; /* Para adaptarse en pantallas pequeñas */
+}
+
+.topButtons button {
+    background-color: transparent;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 500;
+
+    border-radius: 15px;
+    border: 2px outset aliceblue;
+
+    width: auto;
+    height: auto;
+    max-width: 200px;
+    min-width: 120px; 
+
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.topButtons button:hover{
+    border-color: gold;
+    color: gold;
+
+}
+
+.aval{
+
+    font-size: 35px;
+    text-align: center;
+}
+
+.aval i{
+    color: lawngreen;
+    font-size: 20px;
+
+}
+
+.introContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.textContainer{
+    text-align: center;
+
+    width: 60%;
+}
+
+
+
+
+.table{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+
+}
+
+.table .tab{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+
+    margin-top: 40px;
+
+    
+   
+}
+
+.tabTitle{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+
+    height: 8%;
+
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: wheat;
+    border-bottom-color: wheat;
+    border-width: 2px;
+
+}
+
+.tabMain{
+    margin: 0px auto;
+    height: 40%;
+
+}
+
+.tabImage{
+    height: 300px;
+    background-size:cover;
+    background-position: center;
+
+    border-radius: 20px;
+    box-shadow: 0px 2px 20px 0px lightskyblue;
+}
+
+.table h2{
+    color: #3B5EB6;
+}
+
+.note{
+    color: #9eabf7;
+    text-align: center;
+    font-size: 18px;
+    margin: 40px 0px;
+}
+
+
+footer{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+.redsContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.red{
+
+    display: flex;
+    flex-direction: column;
+
+    transition: all 0.2s ease;
+}
+
+.red:hover{
+    color: lightskyblue;
+    
+    transform:translateY(-8px)
+}
+
+.redIcon{
+    font-size: 60px;  
+    color:snow;
+    text-align: center;
+}
+
+.redName{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+    body{
+        width: 100%;
+    }
+
+    .textContainer{
+        width: 95%;
+    }
+  }
