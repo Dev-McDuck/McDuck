@@ -153,11 +153,12 @@ justify-content: space-around;
     text-align: center;
     font-size: 18px;
     margin: 40px 0px;
+
 }
 
 
 footer{
-    margin-top: 50px;
+    margin-top: 80px;
     margin-bottom: 30px;
 }
 
@@ -192,13 +193,77 @@ footer{
     text-align: center;
 }
 
+.payContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.paymentFormat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    transition: all 0.1s ease;
+}
+
+.paymentFormat:hover {
+    transform: scale(1.1);
+}
+
+/* Formatos */
+.payImage {
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}
+
+li{
+    margin: 10px 0px;
+}
+
+/* como pagar */
+.payDiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 95%;
+    box-shadow: 0px 0px 8px 2px black;
+}
+
+.payLogo{
+    width: 40%;
+    height: 200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+
+}
+
+.paySteps{
+    width: 60%;  
+
+}
 
 
-
-
-
-
-
+a{
+    color: aqua;
+    word-wrap: break-word;
+    text-decoration: none;
+    
+}
 
 
 
