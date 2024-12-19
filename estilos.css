@@ -1,6 +1,45 @@
 html{
     background-color: rgb(5, 1, 15);
+
+
+    background: 
+        repeating-linear-gradient(
+            0deg, 
+            rgb(38, 0, 43) 0px, 
+            rgb(38, 0, 43) 1px, 
+            transparent 1px, 
+            transparent 20px
+        ),
+        repeating-linear-gradient(
+            90deg, 
+            rgb(38, 0, 43) 0px, 
+            rgb(38, 0, 43) 1px, 
+            transparent 1px, 
+            transparent 20px
+        ),
+
+        linear-gradient(180deg, rgb(5, 1, 15), rgb(44, 0, 18));
+
+
+        
+
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+
+    animation: move-grid 10s linear infinite;
 }
+
+
+@keyframes move-grid {
+    0% {
+        background-position: 0px 0px, 0px 0px, 0px 0px;
+    }
+    100% {
+        background-position: 100px 100px, 100px 100px, 0px 0px;
+    }
+}
+
 
 
 body{
@@ -13,23 +52,39 @@ body{
 }
 
 
-
-
-
-
 header {
-
     margin-bottom: 30px;
 }
 
 .logo{
-
     font-size: 80px;
     font-family: "Source Code Pro";
     font-weight: bold;
 
     text-align: center;
 
+    text-shadow: 
+    0 0 20px magenta,   /* Resplandor más fuerte */
+    0 0 80px magenta,   /* Resplandor externo */
+    0 0 120px magenta;  /* Efecto profundo */
+
+    animation: neon-glow 2s ease-in-out infinite alternate;
+}
+
+
+@keyframes neon-glow {
+    0% {
+        text-shadow: 
+            0 0 20px rgb(253,61,181), 
+            0 0 80px rgb(253,61,181), 
+            0 0 120px rgb(253,61,181);
+    }
+    100% {
+        text-shadow: 
+            0 0 20px #0ff, 
+            0 0 80px rgb(0, 140, 255), 
+            0 0 120px rgb(0, 0, 255);
+    }
 }
 
 
@@ -82,8 +137,34 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
+
+.sampleContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sampleImage{
+    width: 180px;
+    height: 180px;
+    border-radius: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    border-width: 5px;
+    border-style: outset;
+    border-color: rgb(255, 217, 0);
+
+    margin: 0px 5px;
+
+    box-shadow: 0px 0px 20px 2px rgb(0, 0, 0);
+}
+
+
 
 .textContainer{
     text-align: center;
@@ -153,7 +234,7 @@ justify-content: space-around;
     text-align: center;
     font-size: 18px;
     margin: 40px 0px;
-
+    padding: 18px;
 }
 
 
@@ -236,11 +317,17 @@ li{
 /* como pagar */
 .payDiv{
     display: flex;
+    justify-content: center;
+}
+
+.payFormat{
+    display: flex;
     flex-direction: row;
     align-items: center;
-    width: 95%;
     box-shadow: 0px 0px 8px 2px black;
-}
+    width: 95%;
+    background-color: rgba(146, 0, 151, 0.1);
+}   
 
 .payLogo{
     width: 40%;
@@ -248,13 +335,13 @@ li{
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    
 
+    margin: 0px 5px;
 }
 
 .paySteps{
     width: 60%;  
-
+    margin: 0px 5px;
 }
 
 
@@ -266,10 +353,93 @@ a{
 }
 
 
+.me{
+    display: flex;
+    justify-content: center;
+}
 
-.fade-in {
-    opacity: 0;
+.meImg{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+
+    border-width: 4px;
+    border-style: ridge;
+    border-color: aliceblue;
+    box-shadow: 0px 0px 5px 1px aliceblue;
+}
+
+.meDescription{
+    padding: 0px 15px;
+}
+
+.technologies{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.techImg{
+    margin: 5px 20px;
+    object-fit: contain;
+
+    transition: all 0.3s ease;
+}
+
+.techImg:hover{
+    scale: 1.1;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fadeIn {
+    opacity: 0;   
     animation: fadeInAnimation 1s forwards;
+}
+
+.fast{
+    animation-delay: 0.1s;
+}
+
+.normal{
+    animation-delay: 0.4s;
 }
 
 @keyframes fadeInAnimation {
@@ -280,8 +450,6 @@ a{
         opacity: 1;
     }
 }
-
-
 
 
 

@@ -20,12 +20,11 @@
     </head>
 <body>
 
-    <div  class="fade-in">
-        <header>
+    <div>
+        <header
+        class="fadeIn fast">
             <div class="logo">
-                <div>
-                    Mc Pato
-                </div>        
+                    Mc Pato      
             </div>
     
             <div style="text-align: center;">
@@ -36,7 +35,7 @@
                 <button onclick="window.location.href='index.html';">Inicio</button>
                 <button onclick="window.location.href='payment.html';">¿Cómo Pagar?</button>
                 <button>Muestras</button>        
-                <button>Sobre mí</button>
+                <button onclick="window.location.href='aboutme.html';">Sobre mí</button>
             </div>
     
             <div class="divider">
@@ -44,8 +43,16 @@
             </div>
         </header>
     
-        <main>
+        <main class="fadeIn normal">
             <div class="introContainer">
+                <div class="sampleContainer">
+                    <div class="sampleImage" style="background-image: url(imagenes/lowpoly-sample.jpeg);">
+                    </div>
+                    <div class="sampleImage" style="background-image: url(imagenes/midpoly-sample.jpg);">
+                    </div>
+                    <div class="sampleImage" style="background-image: url(imagenes/highpoly-sample.webp);">
+                    </div>
+                </div>
                 <div class="aval">
                     Disponibilidad: <strong>Activa</strong> 
                     <i class="fa-solid fa-circle"></i>
@@ -236,7 +243,8 @@
         <footer>   
             <hr>
             <div class="redsContainer">
-                <div class="red">
+                <div class="red"
+                onclick="window.open('https://www.youtube.com/@McPatoo')">
                     <div class="redIcon">
                         <i class="fa-brands fa-youtube"></i>
                     </div>
@@ -245,7 +253,8 @@
                     </div>
                 </div>
                 
-                <div class="red">
+                <div class="red"
+                onclick="window.open('https://www.tiktok.com/@mc_patoo')">
                     <div class="redIcon">
                         <i class="fa-brands fa-tiktok"></i>
                     </div>
@@ -254,7 +263,8 @@
                     </div>
                 </div>
 
-                <div class="red">
+                <div class="red"
+                onclick="window.open('https://x.com/McPatoooo')">
                     <div class="redIcon">
                         <i class="fa-brands fa-twitter"></i>
                     </div>
@@ -263,7 +273,8 @@
                     </div>
                 </div>
 
-                <div class="red">
+                <div class="red"
+                onclick="window.open('https://www.instagram.com/')">
                     <div class="redIcon">
                         <i class="fa-brands fa-instagram"></i>
                     </div>
